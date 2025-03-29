@@ -1,0 +1,10 @@
+# ROS2 build directories
+build/
+install/
+log/
+
+# General development files
+*.pyc
+*~
+*.swp
+.DS_Store
