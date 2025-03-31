@@ -21,7 +21,8 @@ class ImageSubscriber(Node):
         current_frame = self.br.imgmsg_to_cv2(data)
         cv2.imshow(self.subscription.topic_name, current_frame)
         cv2.waitKey(1)
-
+from cv_bridge import CvBridge
+import cv2
 def main(args=None):
     rclpy.init(args=args)
 
